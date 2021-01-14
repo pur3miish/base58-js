@@ -1,6 +1,8 @@
+![secp256k1 logo](https://raw.githubusercontent.com/pur3miish/base58/main/static/base58.svg)
+
 # base58
 
-An ultra light weight (566 bytes) base58 encode / decode.
+An ultra light weight (566 bytes) base58 encode / decoder.
 
 # Support
 
@@ -17,7 +19,7 @@ An ultra light weight (566 bytes) base58 encode / decode.
 
 ## namespace base58_chars
 
-Base58 characters must only include numbers `123456789`, uppercase`ABCDEFGHJKLMNPQRSTUVWXYZ` and lowercase `abcdefghijkmnopqrstuvwxyz`.
+Base58 characters must only include numbers 123456789, uppercase ABCDEFGHJKLMNPQRSTUVWXYZ and lowercase abcdefghijkmnopqrstuvwxyz.
 
 **Type:** string
 
