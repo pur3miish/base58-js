@@ -1,7 +1,7 @@
 {
   "name": "base58-js",
   "version": "1.0.0-rc",
-  "description": "An ultra light weight (566 bytes) base58 encode / decode.",
+  "description": "An ultra light weight (566 bytes) base58 encoder / decoder.",
   "main": "public/index.js",
   "repository": {
     "type": "git",
