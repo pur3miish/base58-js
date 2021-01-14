@@ -17,7 +17,7 @@
   "author": "pur3miish",
   "license": "MIT",
   "engines": {
-    "node": "> 8"
+    "node": ">= 8"
   },
   "exports": {
     ".": {
