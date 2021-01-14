@@ -34,7 +34,8 @@
   ],
   "files": [
     "public",
-    "private"
+    "private",
+    "static"
   ],
   "bugs": {
     "url": "https://github.com/pur3miish/base58/issues"
