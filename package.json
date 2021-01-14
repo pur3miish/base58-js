@@ -1,5 +1,5 @@
 {
-  "name": "base58",
+  "name": "base58-js",
   "version": "1.0.0-rc",
   "description": "An ultra light weight (566 bytes) base58 encode / decode.",
   "main": "public/index.js",
