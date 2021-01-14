@@ -1,0 +1,71 @@
+{
+  "name": "base58",
+  "version": "1.0.0-rc",
+  "description": "An ultra light weight (566 bytes) base58 encode / decode.",
+  "main": "public/index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pur3miish/base58.git"
+  },
+  "keywords": [
+    "base58",
+    "decode",
+    "encode",
+    "blockchain",
+    "bitcoin"
+  ],
+  "author": "pur3miish",
+  "license": "MIT",
+  "engines": {
+    "node": "> 8"
+  },
+  "exports": {
+    ".": {
+      "import": "./public/index.mjs",
+      "require": "./public/index.js"
+    },
+    "./public/": "./public/",
+    "./package": "./package.json",
+    "./package.json": "./package.json"
+  },
+  "browserslist": [
+    "defaults",
+    "not IE 11"
+  ],
+  "files": [
+    "public",
+    "private"
+  ],
+  "bugs": {
+    "url": "https://github.com/pur3miish/base58/issues"
+  },
+  "scripts": {
+    "prepare": "npm run prepare:jsdoc && npm run prepare:prettier",
+    "prepare:jsdoc": "jsdoc-md",
+    "prepare:prettier": "prettier --write readme.md",
+    "test:size": "size-limit",
+    "test": "npm run test:size && npm run test:eslint && npm run test:prettier && npm run test:api",
+    "test:api": "coverage-node -r hard-rejection/register test/index.test.mjs",
+    "test:eslint": "eslint .",
+    "test:prettier": "prettier -c .",
+    "prepublishOnly": "npm test"
+  },
+  "homepage": "https://github.com/pur3miish/base58#readme",
+  "devDependencies": {
+    "@size-limit/preset-app": "^4.9.1",
+    "coverage-node": "^4.0.0",
+    "eslint": "^7.16.0",
+    "eslint-config-env": "^16.0.0",
+    "eslint-config-prettier": "^7.1.0",
+    "eslint-plugin-compat": "^3.9.0",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-jsdoc": "^31.0.3",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-prettier": "^3.3.0",
+    "hard-rejection": "^2.1.0",
+    "jsdoc-md": "^8.0.0",
+    "prettier": "^2.2.1",
+    "size-limit": "^4.9.1",
+    "test-director": "^5.0.0"
+  }
+}
