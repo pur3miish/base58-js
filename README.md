@@ -2,7 +2,7 @@
 
 # base58
 
-An ultra light weight (566 bytes) base58 encode / decoder.
+An ultra light weight (566 bytes) base58 encoder / decoder.
 
 # Support
 
