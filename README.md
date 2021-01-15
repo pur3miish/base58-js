@@ -1,4 +1,4 @@
-![secp256k1 logo](https://raw.githubusercontent.com/pur3miish/base58/main/static/base58.svg)
+![base58 logo](https://raw.githubusercontent.com/pur3miish/base58/main/static/base58.svg)
 
 # base58
 
