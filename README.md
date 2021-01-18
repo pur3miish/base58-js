@@ -1,6 +1,6 @@
 ![base58 logo](https://raw.githubusercontent.com/pur3miish/base58/main/static/base58.svg)
 
-# base58
+# base58-js
 
 An ultra light weight (566 bytes) base58 encoder / decoder.
 
