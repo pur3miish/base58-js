@@ -1,6 +1,6 @@
 # base58-js changelog
 
-## Next
+## 1.0.0
 
 ### Patch
 
