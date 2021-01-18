@@ -2,7 +2,7 @@
 
 # base58-js
 
-A light weight base58 encoder / decoder.
+A light weight [universal JavaScript](https://en.wikipedia.org/wiki/Isomorphic_JavaScript) base58 encoder / decoder.
 
 # Support
 

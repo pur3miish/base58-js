@@ -1,5 +1,7 @@
 # base58-js changelog
 
-## 1.0.0
+## Next
+- Updated description.
+## 1.0.0-rc
 
 Initial Release.
