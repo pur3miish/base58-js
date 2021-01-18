@@ -1,7 +1,7 @@
 [
   {
     "name": "ESM",
-    "path": "index.js",
-    "limit": "0.55 KB"
+    "path": "public/index.js",
+    "limit": "0.570 KB"
   }
 ]

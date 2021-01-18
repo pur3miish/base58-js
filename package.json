@@ -52,7 +52,7 @@
   },
   "homepage": "https://github.com/pur3miish/base58-js#readme",
   "devDependencies": {
-    "@size-limit/preset-app": "^4.9.1",
+    "@size-limit/preset-small-lib": "^4.9.1",
     "coverage-node": "^4.0.0",
     "eslint": "^7.16.0",
     "eslint-config-env": "^16.0.0",
