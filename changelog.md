@@ -2,7 +2,7 @@
 
 ## Next
 
-- `package.json` files removed static.
+- `package.json` files removed static fro white list.
 - Updated readme to reflects base58-js instead of just base58.
 - Updated description.
 
