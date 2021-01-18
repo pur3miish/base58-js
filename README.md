@@ -9,6 +9,12 @@ An ultra light weight (566 bytes) base58 encoder / decoder.
 - [Node.js](https://nodejs.org/en/) `>= 8`
 - [Browser list](https://github.com/browserslist/browserslist) `defaults` `not IE 11`.
 
+# Setup
+
+```shell
+$ npm i base58-js
+```
+
 # API
 
 ## Table of contents
