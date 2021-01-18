@@ -1,11 +1,11 @@
 {
   "name": "base58-js",
   "version": "1.0.0-rc",
-  "description": "An ultra light weight (566 bytes) base58 encoder / decoder.",
+  "description": "A light weight base58 encoder / decoder.",
   "main": "public/index.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/pur3miish/base58.git"
+    "url": "git+https://github.com/pur3miish/base58-js.git"
   },
   "keywords": [
     "base58",
@@ -38,7 +38,7 @@
     "static"
   ],
   "bugs": {
-    "url": "https://github.com/pur3miish/base58/issues"
+    "url": "https://github.com/pur3miish/base58-js/issues"
   },
   "scripts": {
     "prepare": "npm run prepare:jsdoc && npm run prepare:prettier",
@@ -51,7 +51,7 @@
     "test:prettier": "prettier -c .",
     "prepublishOnly": "npm test"
   },
-  "homepage": "https://github.com/pur3miish/base58#readme",
+  "homepage": "https://github.com/pur3miish/base58-js#readme",
   "devDependencies": {
     "@size-limit/preset-app": "^4.9.1",
     "coverage-node": "^4.0.0",

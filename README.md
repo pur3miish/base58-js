@@ -2,7 +2,7 @@
 
 # base58-js
 
-An ultra light weight (566 bytes) base58 encoder / decoder.
+A light weight base58 encoder / decoder.
 
 # Support
 
