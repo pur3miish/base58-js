@@ -19,11 +19,11 @@ $ npm i base58-js
 
 ## Table of contents
 
-- [namespace base58\_chars](#namespace-base58\_chars)
-- [function base58\_to_binary](#function-base58\_to_binary)
+- [namespace base58_chars](#namespace-base58_chars)
+- [function base58_to_binary](#function-base58_to_binary)
 - [function binary_to_base58](#function-binary_to_base58)
 
-## namespace base58\_chars
+## namespace base58_chars
 
 Base58 characters must only include numbers 123456789, uppercase ABCDEFGHJKLMNPQRSTUVWXYZ and lowercase abcdefghijkmnopqrstuvwxyz.
 
@@ -31,12 +31,12 @@ Base58 characters must only include numbers 123456789, uppercase ABCDEFGHJKLMNPQ
 
 ---
 
-## function base58\_to_binary
+## function base58_to_binary
 
 Converts a `base58` string to its corresponding binary representation.
 
-| Parameter      | Type                                    | Description           |
-| :------------- | :-------------------------------------- | :-------------------- |
+| Parameter | Type | Description |
+| :-- | :-- | :-- |
 | `base58String` | [base58_chars](#namespace-base58_chars) | base58 encoded string |
 
 **Returns:** Uint8Array — binary representation for the base58 string.
@@ -58,7 +58,7 @@ _Ways to `require`._
 _Usage._
 
 > ```js
-> const bin = base58_to_binary("6MRy")
+> const bin = base58_to_binary('6MRy')
 > console.log(bin)
 > ```
 >
@@ -74,14 +74,14 @@ Converts a [Uint8Array](https://developer.mozilla.org/en-US/docs/Web/JavaScript/
 | :----------- | :------------------ | :---------------- |
 | `uint8array` | Uint8Array \| Array | Unsigned integer. |
 
-**Returns:** [base58\_chars](#namespace-base58\_chars) — The base58 string representation of the binary array.
+**Returns:** [base58_chars](#namespace-base58_chars) — The base58 string representation of the binary array.
 
 ### Examples
 
 _Ways to `require`._
 
 > ```js
-> const { binary_to_base58 } = require("base58-js")
+> const { binary_to_base58 } = require('base58-js')
 > ```
 
 _Ways to `import`._

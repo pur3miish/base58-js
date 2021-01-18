@@ -42,7 +42,7 @@
   "scripts": {
     "prepare": "npm run prepare:jsdoc && npm run prepare:prettier",
     "prepare:jsdoc": "jsdoc-md",
-    "prepare:prettier": "prettier --write readme.md",
+    "prepare:prettier": "prettier --write readme.md && prettier --write changelog.md",
     "test:size": "size-limit",
     "test": "npm run test:size && npm run test:eslint && npm run test:prettier && npm run test:api",
     "test:api": "coverage-node -r hard-rejection/register test/index.test.mjs",
