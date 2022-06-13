@@ -1,6 +1,6 @@
 {
   "name": "base58-js",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "A light weight universal JavaScript base58 encoder / decoder.",
   "main": "public/index.js",
   "repository": {
@@ -52,20 +52,20 @@
   },
   "homepage": "https://github.com/pur3miish/base58-js#readme",
   "devDependencies": {
-    "@size-limit/preset-small-lib": "^4.9.1",
-    "coverage-node": "^4.0.0",
-    "eslint": "^7.16.0",
-    "eslint-config-env": "^16.0.0",
-    "eslint-config-prettier": "^7.1.0",
-    "eslint-plugin-compat": "^3.9.0",
+    "@size-limit/preset-small-lib": "^7.0.8",
+    "coverage-node": "^6.1.0",
+    "eslint": "^8.17.0",
+    "eslint-config-env": "^23.0.2",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-compat": "^4.0.2",
     "eslint-plugin-import": "^2.22.1",
-    "eslint-plugin-jsdoc": "^31.0.3",
+    "eslint-plugin-jsdoc": "^39.3.2",
     "eslint-plugin-node": "^11.1.0",
-    "eslint-plugin-prettier": "^3.3.0",
+    "eslint-plugin-prettier": "^4.0.0",
     "hard-rejection": "^2.1.0",
-    "jsdoc-md": "^8.0.0",
+    "jsdoc-md": "^11.0.2",
     "prettier": "^2.2.1",
-    "size-limit": "^4.9.1",
-    "test-director": "^5.0.0"
+    "size-limit": "^7.0.8 ",
+    "test-director": "^ 8.0.2"
   }
 }

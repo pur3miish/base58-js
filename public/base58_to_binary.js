@@ -26,11 +26,11 @@ const base58_chars = require('../private/base58_chars.js')
 const base58_to_binary = base58String => {
   if (!base58String || typeof base58String !== 'string')
     throw new Error(`Expected base58 string but got “${base58String}”`)
-  if (base58String.match(/[IOl0]/gm))
+  if (base58String.match(/[IOl0]/gmu))
     throw new Error(
-      `Invalid base58 character “${base58String.match(/[IOl0]/gm)}”`
+      `Invalid base58 character “${base58String.match(/[IOl0]/gmu)}”`
     )
-  const lz = base58String.match(/^1+/gm)
+  const lz = base58String.match(/^1+/gmu)
   const psz = lz ? lz[0].length : 0
   const size =
     ((base58String.length - psz) * (Math.log(58) / Math.log(256)) + 1) >>> 0
@@ -38,7 +38,7 @@ const base58_to_binary = base58String => {
   return new Uint8Array([
     ...new Uint8Array(psz),
     ...base58String
-      .match(/.{1}/g)
+      .match(/.{1}/gmu)
       .map(i => base58_chars.indexOf(i))
       .reduce((acc, i) => {
         acc = acc.map(j => {
@@ -49,7 +49,12 @@ const base58_to_binary = base58String => {
         return acc
       }, new Uint8Array(size))
       .reverse()
-      .filter((lastValue => value => (lastValue = lastValue || value))(false))
+      .filter(
+        (
+          lastValue => value =>
+            (lastValue = lastValue || value)
+        )(false)
+      )
   ])
 }
 

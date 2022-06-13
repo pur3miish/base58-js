@@ -1,5 +1,14 @@
 # base58-js changelog
 
+## 1.0.2
+
+- Changelog updates.
+
+## 1.0.1
+
+- Fixes [#2](https://github.com/pur3miish/base58-js/issues/2).
+- Dev dependency updates.
+
 ## 1.0.0
 
 ### Patch

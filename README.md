@@ -17,8 +17,6 @@ $ npm i base58-js
 
 # API
 
-## Table of contents
-
 - [namespace base58_chars](#namespace-base58_chars)
 - [function base58_to_binary](#function-base58_to_binary)
 - [function binary_to_base58](#function-binary_to_base58)
