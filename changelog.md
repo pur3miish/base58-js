@@ -1,6 +1,22 @@
 # base58-js changelog
 
+## 1.0.4
+
+### Patch
+
+- Changelog fixes.
+
+### Patch
+
+- Deprecation warning not actually fixed... again 😅.
+
+### Patch
+
+- Changelog updates.
+
 ## 1.0.2
+
+### Patch
 
 - Changelog updates.
 
