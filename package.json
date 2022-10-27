@@ -20,13 +20,12 @@
     "node": ">= 8"
   },
   "exports": {
-    ".": {
-      "import": "./public/index.mjs",
-      "require": "./public/index.js"
-    },
-    "./public/": "./public/",
-    "./package": "./package.json",
-    "./package.json": "./package.json"
+    ".": "./public/index.js",
+    "./package.json": "./package.json",
+    "./public/binary_to_base58.js": "./public/binary_to_base58.js",
+    "./public/base58_to_binary.js": "./public/base58_to_binary.js",
+    "./public/binary_to_base58": "./public/binary_to_base58.js",
+    "./public/base58_to_binary": "./public/base58_to_binary.js"
   },
   "browserslist": [
     "defaults",

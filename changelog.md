@@ -1,5 +1,11 @@
 # base58-js changelog
 
+# 1.0.5
+
+### Patch
+
+- Fixes [#3](https://github.com/pur3miish/base58-js/issues/3)
+
 ## 1.0.4
 
 ### Patch
