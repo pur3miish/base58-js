@@ -1,6 +1,16 @@
 # base58-js changelog
 
-# 1.0.5
+## 2.0.0
+
+### Major
+
+- Upgraded to [ESM](https://nodejs.org/api/esm.html) as [CJS](https://nodejs.org/api/modules.html) is superseded.
+
+### Minor
+
+- IntelliSense via [JSDoc Reference](https://www.typescriptlang.org/docs/handbook/jsdoc-supported-types.html)
+
+## 1.0.5
 
 ### Patch
 

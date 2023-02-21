@@ -2,97 +2,72 @@
 
 # base58-js
 
-A light weight (\~560 byte) [universal JavaScript](https://en.wikipedia.org/wiki/Isomorphic_JavaScript) base58 encoder / decoder.
+A light weight (\~560 byte) [universal JavaScript](https://en.wikipedia.org/wiki/Isomorphic_JavaScript) base58 encoder and decoder.
 
-# Support
+## Installation
 
-- [Node.js](https://nodejs.org/en/) `>= 8`
-- [Browser list](https://github.com/browserslist/browserslist) `defaults` `not IE 11`.
+For [Node.js](https://nodejs.org), to install [`base58-js`](https://npm.im/base58-js) run:
 
-# Setup
-
-```shell
-$ npm i base58-js
+```sh
+npm install base58-js
 ```
 
-# API
+## Requirements
 
-- [namespace base58_chars](#namespace-base58_chars)
-- [function base58_to_binary](#function-base58_to_binary)
-- [function binary_to_base58](#function-binary_to_base58)
+Supported runtime environments:
 
-## namespace base58_chars
+- [Node.js](https://nodejs.org) versions `^16` || `>=17.0.0` .
+- Browsers matching the [Browserslist](https://browsersl.ist) query [`> 0.5%, not OperaMini all, not dead`](https://browsersl.ist/?q=%3E+0.5%25%2C+not+OperaMini+all%2C+not+dead).
 
-Base58 characters must only include numbers 123456789, uppercase ABCDEFGHJKLMNPQRSTUVWXYZ and lowercase abcdefghijkmnopqrstuvwxyz.
+## Examples
 
-**Type:** string
+**Convert base58 to binary**
 
----
+```js
+import { base58_to_binary } from "base58-js";
 
-## function base58_to_binary
+const bin = base58_to_binary("6MRy");
+console.log(bin);
+```
 
-Converts a `base58` string to its corresponding binary representation.
+> Logged output will be Uint8Array(3) [15, 239, 64].
 
-| Parameter | Type | Description |
-| :-- | :-- | :-- |
-| `base58String` | [base58_chars](#namespace-base58_chars) | base58 encoded string |
+**Convert binary to base58**
 
-**Returns:** Uint8Array — binary representation for the base58 string.
+```js
+import { binary_to_base58 } from "base58-js";
 
-### Examples
+const str = binary_to_base58([15, 239, 64]);
+console.log(str);
+```
 
-_Ways to `import`._
-
-> ```js
-> import { base58_to_binary } from 'base58-js'
-> ```
-
-_Ways to `require`._
-
-> ```js
-> const { base58_to_binary } = require('base58-js')
-> ```
-
-_Usage._
-
-> ```js
-> const bin = base58_to_binary('6MRy')
-> console.log(bin)
-> ```
->
-> Logged output will be Uint8Array(3) \[15, 239, 64].
-
----
-
-## function binary_to_base58
-
-Converts a [Uint8Array](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint8Array) into a base58 string.
-
-| Parameter    | Type                | Description       |
-| :----------- | :------------------ | :---------------- |
-| `uint8array` | Uint8Array \| Array | Unsigned integer. |
-
-**Returns:** [base58_chars](#namespace-base58_chars) — The base58 string representation of the binary array.
-
-### Examples
-
-_Ways to `require`._
-
-> ```js
-> const { binary_to_base58 } = require('base58-js')
-> ```
-
-_Ways to `import`._
-
-> ```js
-> import { binary_to_base58 } from 'base58-js'
-> ```
-
-_Usage._
-
-> ```js
-> const str = binary_to_base58([15, 239, 64])
-> console.log(str)
-> ```
->
 > Logged output will be 6MRy.
+
+**Ways to require in Common JS**
+
+> **Note**
+>
+> As base58 v2.0.0 is an [ESM](https://nodejs.org/docs/latest-v16.x/api/esm.html) module if you need to require it in a [Common JS](https://nodejs.org/docs/latest-v16.x/api/modules.html) package, then you can require like this:
+
+```js
+(async function () {
+  const { base58_to_binary, binary_to_base58 } = await import("base58-js");
+  console.log(
+    binary_to_base58(base58_to_binary("Thequickbrownfoxjumpedoverthea1zydog"))
+  );
+})();
+```
+
+> The logged output was Thequickbrownfoxjumpedoverthea1zydog.
+
+## Exports
+
+Deep imports from the ECMAScript modules are exported via the [`package.json`](./package.json) field [`exports`](https://nodejs.org/api/packages.html#exports):
+
+- [`index.mjs`](./index.mjs)
+- [`create_base58_map.mjs.mjs`](./create_base58_map.mjs.mjs)
+- [`binary_to_base58.mjs.mjs`](./binary_to_base58.mjs.mjs)
+- [`base58_to_binary.mjs.mjs`](./base58_to_binary.mjs.mjs)
+- [`base58_chars.mjs.mjs.mjs`](./base58_chars.mjs.mjs.mjs)
+
+IntelliSense via [TypeScript JSDoc](https://www.typescriptlang.org/docs/handbook/jsdoc-supported-types.html).

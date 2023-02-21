@@ -1,7 +1,3 @@
 {
-  "proseWrap": "never",
-  "singleQuote": true,
-  "semi": false,
-  "trailingComma": "none",
-  "arrowParens": "avoid"
+  "proseWrap": "never"
 }

@@ -1,0 +1,12 @@
+{
+  "compilerOptions": {
+    "maxNodeModuleJsDepth": 10,
+    "module": "nodenext",
+    "noEmit": true,
+    "strict": true,
+    "strictNullChecks": false
+  },
+  "typeAcquisition": {
+    "enable": false
+  }
+}
