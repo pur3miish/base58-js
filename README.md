@@ -2,6 +2,8 @@
 
 # base58-js
 
+[![NPM Package](https://img.shields.io/npm/v/base58-js.svg)](https://www.npmjs.org/package/base58-js) [![CI status](https://github.com/pur3miish/base58-js/workflows/CI/badge.svg)](https://github.com/pur3miish/base58-js/actions) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/pur3miish/base58-js/blob/main/LICENSE)
+
 A light weight (\~560 byte) [universal JavaScript](https://en.wikipedia.org/wiki/Isomorphic_JavaScript) base58 encoder and decoder.
 
 ## Installation
