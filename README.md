@@ -14,6 +14,15 @@ For [Node.js](https://nodejs.org), to install [`base58-js`](https://npm.im/base5
 npm install base58-js
 ```
 
+For [Deno](https://deno.land/), import the files with deep imports.
+
+```js
+import base58_to_binary from "https://deno.land/x/base58/base58_to_binary.mjs";
+import binary_to_base_58 from "https://deno.land/x/base58/binary_to_base58.mjs";
+
+console.log(binary_to_base_58(base58_to_binary("denoisabase58")));
+```
+
 ## Requirements
 
 Supported runtime environments:
