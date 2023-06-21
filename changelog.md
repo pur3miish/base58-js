@@ -1,5 +1,11 @@
 # base58-js changelog
 
+## 2.0.1
+
+### Patch
+
+- paydevs registry
+
 ## 2.0.0
 
 ### Major

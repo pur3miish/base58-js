@@ -1,6 +1,6 @@
 {
   "name": "base58-js",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "A light weight universal JavaScript base58 encoder / decoder.",
   "main": "index.mjs",
   "repository": {
@@ -14,6 +14,9 @@
     "blockchain",
     "bitcoin"
   ],
+  "publishConfig": {
+    "registry": "https://npm.paydevs.com/"
+  },
   "author": "pur3miish",
   "license": "MIT",
   "engines": {
