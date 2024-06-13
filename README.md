@@ -76,9 +76,9 @@ console.log(str);
 Deep imports from the ECMAScript modules are exported via the [`package.json`](./package.json) field [`exports`](https://nodejs.org/api/packages.html#exports):
 
 - [`index.mjs`](./index.mjs)
-- [`create_base58_map.mjs.mjs`](./create_base58_map.mjs.mjs)
-- [`binary_to_base58.mjs.mjs`](./binary_to_base58.mjs.mjs)
-- [`base58_to_binary.mjs.mjs`](./base58_to_binary.mjs.mjs)
-- [`base58_chars.mjs.mjs.mjs`](./base58_chars.mjs.mjs.mjs)
+- [`create_base58_map.mjs`](./create_base58_map.mjs)
+- [`binary_to_base58.mjs`](./binary_to_base58.mjs)
+- [`base58_to_binary.mjs`](./base58_to_binary.mjs)
+- [`base58_chars.mjs`](./base58_chars.mjs)
 
 IntelliSense via [TypeScript JSDoc](https://www.typescriptlang.org/docs/handbook/jsdoc-supported-types.html).
