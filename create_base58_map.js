@@ -1,6 +1,6 @@
 // @ts-check
 
-import base58_chars from "./base58_chars.mjs";
+import base58_chars from "./base58_chars.js";
 
 /**
  * Generates a mapping between base58 and ascii.

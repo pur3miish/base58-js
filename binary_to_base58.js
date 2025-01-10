@@ -1,16 +1,16 @@
 // @ts-check
 
-import base58_chars from "./base58_chars.mjs";
-import create_base58_map from "./create_base58_map.mjs";
+import base58_chars from "./base58_chars.js";
+import create_base58_map from "./create_base58_map.js";
 
 const base58Map = create_base58_map();
 
-/** @typedef {import("./base58_chars.mjs").base58_chars} base58_chars */
+/** @typedef {import("./base58_chars.js").base58_chars} base58_chars */
 
 /**
  * Converts a Uint8Array into a base58 string.
  * @param {Uint8Array} uint8array Unsigned integer array.
- * @returns { import("./base58_chars.mjs").base58_chars } base58 string representation of the binary array.
+ * @returns { import("./base58_chars.js").base58_chars } base58 string representation of the binary array.
  * @example <caption>Usage.</caption>
  * ```js
  * const str = binary_to_base58([15, 239, 64])

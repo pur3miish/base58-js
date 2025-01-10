@@ -1,10 +1,8 @@
-// @ts-check
-
-import base58_chars from "./base58_chars.mjs";
+import base58_chars from "./base58_chars.js";
 
 /**
  * Converts a base58 string to the corresponding binary representation.
- * @param { import("./base58_chars.mjs").base58_chars } base58String base58 encoded string.
+ * @param { import("./base58_chars.js").base58_chars } base58String base58 encoded string.
  * @returns {Uint8Array} Binary representation for the base58 string.
  * @example
  * ```js

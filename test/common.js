@@ -1,7 +1,5 @@
-(async function () {
-  const { base58_to_binary, binary_to_base58 } = await import("base58-js");
+import { base58_to_binary, binary_to_base58 } from "base58-js";
 
-  console.log(
-    binary_to_base58(base58_to_binary("Thequickbrownfoxjumpedoverthea1zydog"))
-  );
-})();
+console.log(
+  binary_to_base58(base58_to_binary("Thequickbrownfoxjumpedoverthea1zydog"))
+);

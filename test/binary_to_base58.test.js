@@ -1,6 +1,6 @@
 import { ok } from "assert";
 
-import binary_to_base58 from "../binary_to_base58.mjs";
+import binary_to_base58 from "../binary_to_base58.js";
 
 export default (tests) => {
   tests.add("binary to base58 string", () => {

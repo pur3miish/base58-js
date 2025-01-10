@@ -14,15 +14,6 @@ For [Node.js](https://nodejs.org), to install [`base58-js`](https://npm.im/base5
 npm install base58-js
 ```
 
-For [Deno](https://deno.land/), import the files with deep imports.
-
-```js
-import base58_to_binary from "https://deno.land/x/base58/base58_to_binary.mjs";
-import binary_to_base_58 from "https://deno.land/x/base58/binary_to_base58.mjs";
-
-console.log(binary_to_base_58(base58_to_binary("denoisabase58")));
-```
-
 ## Requirements
 
 Supported runtime environments:
@@ -52,33 +43,16 @@ const str = binary_to_base58([15, 239, 64]);
 console.log(str);
 ```
 
-> Logged output will be 6MRy.
-
-**Ways to require in Common JS**
-
-> **Note**
->
-> As base58 v2.0.0 is an [ESM](https://nodejs.org/docs/latest-v16.x/api/esm.html) module if you need to require it in a [Common JS](https://nodejs.org/docs/latest-v16.x/api/modules.html) package, then you can require like this:
-
-```js
-(async function () {
-  const { base58_to_binary, binary_to_base58 } = await import("base58-js");
-  console.log(
-    binary_to_base58(base58_to_binary("Thequickbrownfoxjumpedoverthea1zydog"))
-  );
-})();
-```
-
 > The logged output was Thequickbrownfoxjumpedoverthea1zydog.
 
 ## Exports
 
 Deep imports from the ECMAScript modules are exported via the [`package.json`](./package.json) field [`exports`](https://nodejs.org/api/packages.html#exports):
 
-- [`index.mjs`](./index.mjs)
-- [`create_base58_map.mjs`](./create_base58_map.mjs)
-- [`binary_to_base58.mjs`](./binary_to_base58.mjs)
-- [`base58_to_binary.mjs`](./base58_to_binary.mjs)
-- [`base58_chars.mjs`](./base58_chars.mjs)
+- [`index.js`](./index.js)
+- [`create_base58_map.js`](./create_base58_map.js)
+- [`binary_to_base58.js`](./binary_to_base58.js)
+- [`base58_to_binary.js`](./base58_to_binary.js)
+- [`base58_chars.js`](./base58_chars.js)
 
 IntelliSense via [TypeScript JSDoc](https://www.typescriptlang.org/docs/handbook/jsdoc-supported-types.html).

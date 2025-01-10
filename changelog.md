@@ -1,5 +1,14 @@
 # base58-js changelog
 
+## 3.0.0
+
+### Major
+
+- TypeScript declaration files (.d.ts) have been added for all public modules.
+- Support for node >=14.0.0 & npm >=7.0.0.
+- Imports now favours dropping the file extension.
+- Refined exports Field: Simplified the module exports by removing the .mjs and .js extensions from the paths. Now, users can import modules without needing to specify the file extension.
+
 ## 2.0.1
 
 ### Patch

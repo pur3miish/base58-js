@@ -1,8 +1,9 @@
 {
   "name": "base58-js",
-  "version": "2.0.1",
+  "version": "3.0.0",
   "description": "A light weight universal JavaScript base58 encoder / decoder.",
-  "main": "index.mjs",
+  "main": "index.js",
+  "types": "index.d.ts",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/pur3miish/base58-js.git"
@@ -14,27 +15,28 @@
     "blockchain",
     "bitcoin"
   ],
-  "publishConfig": {
-    "registry": "https://npm.paydevs.com/"
-  },
   "author": "pur3miish",
   "license": "MIT",
   "engines": {
-    "node": ">= 8"
+    "node": ">=14.0.0",
+    "npm": ">=7.0.0"
   },
   "exports": {
-    ".": "./index.mjs",
+    ".": "./index.js",
     "./package.json": "./package.json",
-    "./binary_to_base58.mjs": "./binary_to_base58.mjs",
-    "./base58_to_binary.mjs": "./base58_to_binary.mjs"
+    "./binary_to_base58": "./binary_to_base58.js",
+    "./base58_to_binary": "./base58_to_binary.js"
   },
   "sideEffects": false,
   "files": [
-    "base58_chars.mjs",
-    "base58_to_binary.mjs",
-    "binary_to_base58.mjs",
-    "create_base58_map.mjs",
-    "index.mjs"
+    "base58_chars.js",
+    "base58_to_binary.js",
+    "base58_to_binary.d.ts",
+    "binary_to_base58.js",
+    "binary_to_base58.d.ts",
+    "create_base58_map.js",
+    "index.js",
+    "index.d.ts"
   ],
   "browserslist": [
     "defaults",
@@ -44,12 +46,12 @@
     "url": "https://github.com/pur3miish/base58-js/issues"
   },
   "scripts": {
-    "size": "size-limit index.mjs",
+    "size": "size-limit index.js",
     "eslint": "eslint .",
     "prettier": "prettier -c .",
     "prettier:readme": "prettier --write readme.md",
     "types": "tsc -p jsconfig.json",
-    "tests": "coverage-node test/index.test.mjs",
+    "tests": "coverage-node test/index.test.js",
     "test": "npm run eslint && npm run prettier && npm run types && npm run tests && npm run size",
     "prepublishOnly": "npm test"
   },
