@@ -1,6 +1,6 @@
 {
   "name": "base58-js",
-  "version": "3.0.0",
+  "version": "3.0.1",
   "description": "A light weight universal JavaScript base58 encoder / decoder.",
   "main": "index.js",
   "types": "index.d.ts",
@@ -8,6 +8,7 @@
     "type": "git",
     "url": "git+https://github.com/pur3miish/base58-js.git"
   },
+  "type": "module",
   "keywords": [
     "base58",
     "decode",
@@ -18,7 +19,7 @@
   "author": "pur3miish",
   "license": "MIT",
   "engines": {
-    "node": ">=14.0.0",
+    "node": ">=16.0.0",
     "npm": ">=7.0.0"
   },
   "exports": {
@@ -46,24 +47,22 @@
     "url": "https://github.com/pur3miish/base58-js/issues"
   },
   "scripts": {
-    "size": "size-limit index.js",
     "eslint": "eslint .",
     "prettier": "prettier -c .",
     "prettier:readme": "prettier --write readme.md",
     "types": "tsc -p jsconfig.json",
-    "tests": "coverage-node test/index.test.js",
-    "test": "npm run eslint && npm run prettier && npm run types && npm run tests && npm run size",
+    "tests": "mocha",
+    "test": "npm run eslint && npm run prettier && npm run types && npm run tests",
     "prepublishOnly": "npm test"
   },
   "homepage": "https://github.com/pur3miish/base58-js#readme",
   "devDependencies": {
-    "@size-limit/preset-small-lib": "^7.0.8",
     "@types/node": "^18.13.0",
-    "coverage-node": "^8.0.0",
+    "chai": "^5.1.2",
     "eslint": "^8.34.0",
     "eslint-plugin-simple-import-sort": "^10.0.0",
+    "mocha": "^11.0.1",
     "prettier": "^2.8.4",
-    "test-director": "^10.0.0",
     "typescript": "^4.9.5"
   }
 }

@@ -1,5 +1,13 @@
 # base58-js changelog
 
+## 3.0.1
+
+### Patch
+
+- Changed testing suite to mocha/chai.
+- removed [size-limit](https://github.com/ai/size-limit#readme).
+- Depen updates
+
 ## 3.0.0
 
 ### Major

@@ -1,9 +1,9 @@
-import TestDirector from "test-director";
+import { equal } from "assert";
+import { base58_to_binary, binary_to_base58 } from "base58-js";
 
-import base58_to_binary from "./base58_to_binary.test.js";
-import binary_to_base58 from "./binary_to_base58.test.js";
-
-const tests = new TestDirector();
-base58_to_binary(tests);
-binary_to_base58(tests);
-tests.run();
+it("base58 to binary", () => {
+  const str = "Thequickbrownfoxjumpedoverthea1zydog";
+  const array = base58_to_binary(str);
+  binary_to_base58(array);
+  equal(binary_to_base58(array), str);
+});
