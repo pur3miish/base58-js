@@ -1,5 +1,22 @@
 # base58-js changelog
 
+## 3.0.2
+
+- Added support for both named exports and explicit .js paths for binary_to_base58 and base58_to_binary modules.
+- Consumers can now import modules either without the .js extension or with it directly:
+
+#### Without .js:
+
+```js
+import binaryToBase58 from "base58-js/binary_to_base58";
+```
+
+#### With .js:
+
+```js
+import binaryToBase58 from "base58-js/binary_to_base58.js";
+```
+
 ## 3.0.1
 
 ### Patch
