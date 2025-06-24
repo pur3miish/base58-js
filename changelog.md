@@ -1,5 +1,19 @@
 # base58-js changelog
 
+## 3.0.3
+
+### Patch
+
+- Fixed Corrected TypeScript declaration files (.d.ts) to export functions properly without importing .d.ts files directly.
+
+- Updated index.d.ts to re-export named functions from implementation .js files, ensuring compatibility with TypeScript's module resolution and eliminating errors like TS2846 and TS1362.
+
+- Changed Improved package.json exports and types fields to explicitly map .js files to their corresponding .d.ts typings for better editor support and module resolution.
+
+- Enhanced README with detailed usage examples, environment requirements, export info, TypeScript support, and a clear explanation of tree-shaking implications.
+
+- This fixes the issue described in [#4](https://github.com/pur3miish/base58-js/pull/4).
+
 ## 3.0.2
 
 - Added support for both named exports and explicit .js paths for binary_to_base58 and base58_to_binary modules.

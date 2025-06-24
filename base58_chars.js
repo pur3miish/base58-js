@@ -1,9 +1,16 @@
 // @ts-check
 
 /**
- * Base58 characters include numbers 123456789, uppercase ABCDEFGHJKLMNPQRSTUVWXYZ and lowercase abcdefghijkmnopqrstuvwxyz.
- * @typedef {String} base58_chars Base58 characters include numbers 123456789, uppercase ABCDEFGHJKLMNPQRSTUVWXYZ and lowercase abcdefghijkmnopqrstuvwxyz.
+ * A string containing all valid Base58 characters:
+ * - Digits: 1–9 (excluding 0)
+ * - Uppercase: A–Z (excluding I and O)
+ * - Lowercase: a–z (excluding l)
+ *
+ * @typedef {string} base58_chars
+ * @see https://en.wikipedia.org/wiki/Base58
  */
+
+/** @type {base58_chars} */
 const base58_chars =
   "123456789ABCDEFGHJKLMNPQRSTUVWXYZabcdefghijkmnopqrstuvwxyz";
 

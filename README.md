@@ -4,26 +4,28 @@
 
 [![NPM Package](https://img.shields.io/npm/v/base58-js.svg)](https://www.npmjs.org/package/base58-js) [![CI status](https://github.com/pur3miish/base58-js/workflows/CI/badge.svg)](https://github.com/pur3miish/base58-js/actions) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/pur3miish/base58-js/blob/main/LICENSE)
 
-A light weight (\~560 byte) [universal JavaScript](https://en.wikipedia.org/wiki/Isomorphic_JavaScript) base58 encoder and decoder.
+A lightweight (~560 bytes) [universal JavaScript](https://en.wikipedia.org/wiki/Isomorphic_JavaScript) Base58 encoder and decoder.
+
+---
 
 ## Installation
 
-For [Node.js](https://nodejs.org), to install [`base58-js`](https://npm.im/base58-js) run:
+Install [`base58-js`](https://npm.im/base58-js) via npm:
 
-```sh
+```bash
 npm install base58-js
 ```
 
 ## Requirements
 
-Supported runtime environments:
+Supported environments:
 
 - [Node.js](https://nodejs.org) versions `^16` || `>=17.0.0` .
 - Browsers matching the [Browserslist](https://browsersl.ist) query [`> 0.5%, not OperaMini all, not dead`](https://browsersl.ist/?q=%3E+0.5%25%2C+not+OperaMini+all%2C+not+dead).
 
-## Examples
+## Usage Examples
 
-**Convert base58 to binary**
+**Convert Base58 to binary**
 
 ```js
 import { base58_to_binary } from "base58-js";
@@ -55,4 +57,6 @@ Deep imports from the ECMAScript modules are exported via the [`package.json`](.
 - [`base58_to_binary.js`](./base58_to_binary.js)
 - [`base58_chars.js`](./base58_chars.js)
 
-IntelliSense via [TypeScript JSDoc](https://www.typescriptlang.org/docs/handbook/jsdoc-supported-types.html).
+## TypeScript Support
+
+This package includes type definitions via [TypeScript JSDoc](https://www.typescriptlang.org/docs/handbook/jsdoc-supported-types.html) for excellent IntelliSense and type checking.

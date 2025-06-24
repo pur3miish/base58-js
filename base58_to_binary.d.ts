@@ -1,1 +1,2 @@
-export default function base58_to_binary(input: string): Uint8Array;
+declare function base58_to_binary(base58String: string): Uint8Array;
+export default base58_to_binary;

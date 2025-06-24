@@ -1,6 +1,6 @@
 {
   "name": "base58-js",
-  "version": "3.0.2",
+  "version": "3.0.3",
   "description": "A light weight universal JavaScript base58 encoder / decoder.",
   "main": "index.js",
   "types": "index.d.ts",
@@ -23,12 +23,33 @@
     "npm": ">=7.0.0"
   },
   "exports": {
-    ".": "./index.js",
+    ".": {
+      "import": "./index.js",
+      "types": "./index.d.ts"
+    },
     "./package.json": "./package.json",
-    "./binary_to_base58": "./binary_to_base58.js",
-    "./base58_to_binary": "./base58_to_binary.js",
-    "./binary_to_base58.js": "./binary_to_base58.js",
-    "./base58_to_binary.js": "./base58_to_binary.js"
+    "./binary_to_base58.js": {
+      "import": "./binary_to_base58.js",
+      "types": "./binary_to_base58.d.ts"
+    },
+    "./binary_to_base58": {
+      "import": "./binary_to_base58.js",
+      "types": "./binary_to_base58.d.ts"
+    },
+    "./base58_to_binary": {
+      "import": "./base58_to_binary.js",
+      "types": "./base58_to_binary.d.ts"
+    },
+    "./base58_to_binary.js": {
+      "import": "./base58_to_binary.js",
+      "types": "./base58_to_binary.d.ts"
+    },
+    "./base58_chars": {
+      "import": "./base58_chars.js"
+    },
+    "./create_base58_map": {
+      "import": "./create_base58_map.js"
+    }
   },
   "sideEffects": false,
   "files": [
