@@ -45,7 +45,7 @@ const str = binary_to_base58([15, 239, 64]);
 console.log(str);
 ```
 
-> The logged output was Thequickbrownfoxjumpedoverthea1zydog.
+> The logged output was 6MRy.
 
 ## Exports
 
